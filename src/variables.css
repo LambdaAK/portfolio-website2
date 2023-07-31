@@ -1,0 +1,13 @@
+:root {
+  --text-md: 1rem;
+  --text-header: 2rem;
+}
+
+@media (min-width: 600px) {
+  :root {
+    --text-md: 1.5rem;
+    --text-header: 3rem;
+  }
+}
+
+/*# sourceMappingURL=variables.css.map */

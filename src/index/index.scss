@@ -1,0 +1,124 @@
+@import "./../variables.scss";
+
+.welcome {
+    font-size: var(--text-header);
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: fit-content;
+    color: black;
+}
+
+.projects-header {
+    font-size: var(--text-header);
+    color: black;
+}
+
+.intro-section {
+    @include shadow;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 8px;
+    margin-top: 2rem;
+    font-size: var(--text-md);
+    width: min(800px, 100% - 4rem);
+    background-color: white;
+}
+
+
+// make a gradient element
+.gradient {
+    background: linear-gradient(90deg, #6cabdc 0%, #12378d 50%, #0000ff 50%, #0000ff 100%);
+    background-size: 200% 200%;
+    animation: gradient 15s ease infinite;
+    border-radius: 5px;
+    padding: 1rem;
+    margin: 1rem;
+    font-size: $medium;
+    font-weight: bold;
+    text-align: center;
+}
+
+.desc-list {
+    margin-right: 1rem;
+
+}
+
+.desc-list-item {
+    @include shadow;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    color: black;
+    padding: 1rem;
+    background-color: $light-blue;
+    
+}
+
+
+.vertical-divider {
+    // gradient border left periwinkle
+    border-left: 5px solid rgb(108, 122, 255);
+    border-radius: 8px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.projects-header {
+    font-size: $text-header;
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.project-item {
+    @include shadow;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-right: 2rem;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 2rem;
+    border-radius: 5px;
+    color: black;
+    margin-right: 1rem;
+    width: fit-content;
+    background-color: $light-blue;
+
+    &:hover {
+        padding-right: 8rem;
+        margin-left: 2rem;
+        background-color: $blue;
+
+        // light slate
+    }
+
+    transition: all ease-in-out 0.3s;
+}
+
+.projects-section {
+    @include shadow;
+    font-size: var(--text-md);
+    border-color: $periwinkle;
+    border-style: solid;
+    border-radius: 8px;
+    margin-top: 2rem;
+    margin-left: auto;
+    margin-right: auto;
+    width: min(800px, 100% - 4rem);
+    background-color: white;
+
+
+ 
+
+}
+
+.index-content {
+    display: flex;
+    flex-direction: column;
+
+}
+
+body {
+    background-color: $light-blue;
+}

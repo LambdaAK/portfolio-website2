@@ -1,0 +1,52 @@
+$dark-slate: #111111;
+$periwinkle: #CCCCFF;
+$light-blue: #dcf3ff;
+$blue: #a2d2df;
+
+$text-md: 1rem;
+$text-header: 2rem;
+
+$extra-small: 0px;
+$small: 600px;
+$medium: 768px;
+$large: 992px;
+$extra-large: 1200px;
+
+:root {
+    --text-md: 1rem;
+    --text-header: 2rem;
+}
+
+
+@mixin xs {
+    @media (min-width: $extra-small) {@content}
+}
+
+@mixin sm {
+    @media (min-width: $small) {@content}
+}
+
+@mixin md {
+    @media (min-width: $medium) {@content}
+}
+
+@mixin lg {
+    @media (min-width: $large) {@content}
+}
+
+@mixin xl {
+    @media (min-width: $extra-large) {@content}
+}
+
+@mixin shadow {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+}
+
+:root {
+    @include sm {
+        --text-md: 1.5rem;
+        --text-header: 3rem;
+    }
+}
+
