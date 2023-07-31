@@ -3,7 +3,7 @@ import "./index.css"
 
 function Welcome() {
     return (
-        <div className = "welcome">
+        <div className = "header">
             Welcome.
         </div>
     )
@@ -30,7 +30,7 @@ function IntroSection() {
 
 function ProjectsHeader() {
     return (
-        <div className = "projects-header">
+        <div className = "header">
             Projects
         </div>
     )
